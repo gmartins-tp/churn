@@ -12,7 +12,7 @@ from tchurn import BetaGeoFitter
 from tchurn.generate_data import modified_beta_geometric_nbd_model
 
 
-class ModifiedBetaGeoFitter(BetaGeoFitter):
+class MBGFitter(BetaGeoFitter):
     r"""
     Also known as the MBG/NBD model.
 
