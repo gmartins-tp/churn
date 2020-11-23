@@ -12,7 +12,7 @@ __all__ = (
     "__version__",
     "BetaGeoFitter",
     "ParetoNBDFitter",
-    "GammaGammaFitter",
-    "ModifiedBetaGeoFitter",
+    "GGFitter",
+    "MBGFitter",
     "BetaGeoBetaBinomFitter",
 )
