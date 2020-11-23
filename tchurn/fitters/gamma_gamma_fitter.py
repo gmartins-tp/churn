@@ -89,7 +89,7 @@ class GGFitter(BaseFitter):
         penalizer_term = penalizer_coef * sum(params ** 2)
         return -negative_log_likelihood_values.sum() / weights.sum() + penalizer_term
 
-    def conditional_expected_average_profit(self, frequency=None, monetary_value=None):
+    def conditional_exp_prof(self, frequency=None, monetary_value=None):
         """
         Conditional expectation of the average profit.
 
