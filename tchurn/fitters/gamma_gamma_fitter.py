@@ -63,9 +63,9 @@ class GGFitter(BaseFitter):
 
     """
 
-    def __init__(self, penalizer_coef=0.0):
+    def __init__(self, penl=0.0):
         """Initialization, set penalizer_coef."""
-        self.penalizer_coef = penalizer_coef
+        self.penalizer_coef = penl
 
     @staticmethod
     def _negative_log_likelihood(log_params, frequency, avg_monetary_value, weights, penalizer_coef):
