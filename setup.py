@@ -16,9 +16,6 @@ setup(
     description="",
     packages=["tchurn", "tchurn.datasets"],
     license="MIT",
-    keywords="customer lifetime value, clv, ltv, BG/NBD, pareto/NBD, frequency, recency",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
     classifiers=[
         "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3.5",
@@ -26,5 +23,5 @@ setup(
     install_requires=["numpy>=1.10.0", "scipy>=1.0.0", "pandas>=0.24.0", "autograd>=1.2.0", "dill>=0.2.6"],
     package_data={
         "tchurn": ["datasets/*", "../README.md", "../README.txt", "../LICENSE", "../MANIFEST.in", "fitters/*"]
-    },
+    }
 )
