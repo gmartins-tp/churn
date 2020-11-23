@@ -148,7 +148,7 @@ class MBGFitter(BetaGeoFitter):
         hyp = hyp2f1(r, b + 1, a + b, t / (alpha + t))
         return b / (a - 1) * (1 - hyp * (alpha / (alpha + t)) ** r)
 
-    def conditional_expected_number_of_purchases_up_to_time(self, t, frequency, recency, T):
+    def conditional_expect_purch(self, t, frequency, recency, T):
         """
         Conditional expected number of repeat purchases up to time t.
 
@@ -185,7 +185,7 @@ class MBGFitter(BetaGeoFitter):
 
         return numerator / denominator
 
-    def conditional_probability_alive(self, frequency, recency, T):
+    def cond_prob_live(self, frequency, recency, T):
         """
         Conditional probability alive.
 
