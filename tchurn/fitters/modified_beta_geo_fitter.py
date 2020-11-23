@@ -53,7 +53,7 @@ class MBGFitter(BetaGeoFitter):
 
     def __init__(self, penalizer_coef=0.0):
         """Initialization, set penalizer_coef."""
-        super(ModifiedBetaGeoFitter, self).__init__(penalizer_coef)
+        super(MBGFitter, self).__init__(penalizer_coef)
 
     def fit(
         self, frequency, recency, T, weights=None, initial_params=None, verbose=False, tol=1e-7, index=None, **kwargs
