@@ -13,7 +13,7 @@ from . import BaseFitter
 from ..utils import _check_inputs, _customer_lifetime_value
 
 
-class GammaGammaFitter(BaseFitter):
+class GGFitter(BaseFitter):
     """
     Fitter for the gamma-gamma model.
 
