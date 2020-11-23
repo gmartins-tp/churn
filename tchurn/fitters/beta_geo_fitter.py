@@ -57,9 +57,9 @@ class BetaGeoFitter(BaseFitter):
 
     """
 
-    def __init__(self, penalizer_coef=0.0):
+    def __init__(self, penl=0.0):
         """Initialization, set penalizer_coef."""
-        self.penalizer_coef = penalizer_coef
+        self.penalizer_coef = penl
 
     def fit(
         self, frequency, recency, T, weights=None, initial_params=None, verbose=False, tol=1e-7, index=None, **kwargs
