@@ -83,7 +83,7 @@ def calibration_and_holdout_data(
 
     # create calibration dataset
     calibration_transactions = transactions.loc[transactions[datetime_col] <= calibration_period_end]
-    calibration_summary_data = summary_data_from_transaction_data(
+    calibration_summary_data = summary_data(
         calibration_transactions,
         customer_id_col,
         datetime_col,
