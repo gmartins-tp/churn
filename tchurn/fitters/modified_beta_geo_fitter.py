@@ -99,7 +99,7 @@ class MBGFitter(BetaGeoFitter):
         """
         # although the parent method is called, this class's
         # _negative_log_likelihood is referenced
-        super(ModifiedBetaGeoFitter, self).fit(
+        super(MBGFitter, self).fit(
             frequency, recency, T, weights, initial_params, verbose, tol, index=index, **kwargs
         )
         # this needs to be reassigned from the parent method
