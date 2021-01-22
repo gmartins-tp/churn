@@ -249,7 +249,7 @@ class GGFitter(BaseFitter):
 
         """
         # use the Gamma-Gamma estimates for the monetary_values
-        adjusted_monetary_value = self.conditional_expected_average_profit(frequency, monetary_value)
+        adjusted_monetary_value = self.conditional_exp_prof(frequency, monetary_value)
         return _customer_lifetime_value(
             transaction_prediction_model, frequency, recency, T, adjusted_monetary_value, time, discount_rate, freq=freq
         )
